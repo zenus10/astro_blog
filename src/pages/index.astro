@@ -1,10 +1,44 @@
----
-import Layout from '../layouts/Layout.astro';
----
+--- ---
+<!DOCTYPE html>
+<html lang="en">
 
-<Layout>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
 <body>
-  <h1>lalala</h1>
-  <p>www</p>
-<body>
-</Layout>
+    <header class="header">
+        <a href="#" class="logo">Zenus10 zzZ</a>
+
+        <nav class="navbar">
+            <a href="#" class="active item" style="--i: 1">Home</a>
+            <a href="#" class="item" style="--i: 2">About</a>
+            <a href="#" class="item" style="--i: 3">Skills</a>
+            <a href="#" class="item" style="--i: 4">Portfolio</a>
+            <a href="#" class="item" style="--i: 5">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello,It's Me</h3>
+            <h1>Call Me Zenus10</h1>
+            <h3>And I'm <span class="multiple-text"></span></h3>
+            <p>
+                Accept all the cookies,so what do I EAT?
+            </p>
+        </div>
+        <div class="home-img">
+            <img src="/pic.jpg" alt="" />
+        </div>
+    </section>
+    <script is:inline src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script is:inline src="/script.js"></script>
+</body>
+
+</html>
